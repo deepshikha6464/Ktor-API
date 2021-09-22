@@ -7,6 +7,8 @@ import org.jetbrains.exposed.sql.statements.InsertStatement
 import com.deeps.model.dao.userDao as userDao
 
 class userRepository : userDao {
+
+
     override suspend fun insert(userId: Int, name: String, age: Int): users? {
         var statement: InsertStatement<Number>? = null
         DatabaseFactory.dbQuery {

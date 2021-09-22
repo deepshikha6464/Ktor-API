@@ -30,7 +30,11 @@ fun Application.module(testing: Boolean = false) {
     routing {
 
     }
+
+
 }
+
+const val API_VERSION = "/v1"
 
 
 
